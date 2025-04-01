@@ -1,0 +1,135 @@
+h1 {
+  color: rgb(10, 176, 137);
+  font-weight: bold;
+}
+button {
+  background-color: aqua;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+  transition: 0.5s;
+}
+
+.about {
+  background-color: black;
+  padding-bottom: 120px;
+  color: white;
+  padding-top: 60px;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 80px;
+}
+.box {
+  height: 35vh;
+  width: 39vh;
+  border-radius: 20px;
+  border: 3px solid #000000;
+  margin-top: 5%;
+  box-shadow: 1px 1px 20px hsla(180, 100%, 100%, 0.969),
+    1px 1px 20px hwb(195 98% 0% / 0.969);
+}
+.box h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.box i {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 45px;
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.box a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.box p {
+  text-align: center;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.images img {
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 10px;
+}
+marquee {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  white-space: nowrap;
+}
+.images h3 {
+  color: rgb(10, 176, 137);
+  font-weight: bold;
+}
+.home h3 {
+  color: white;
+  font-weight: 500;
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+}
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 10s linear infinite;  /* Reduced from 20s to 10s for faster speed */
+  gap: 20px;
+}
+
+.marquee-content img {
+  height: 300px;
+  min-width: 300px;
+  border-radius: 10px;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
