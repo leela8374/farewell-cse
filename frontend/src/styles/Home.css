@@ -20,9 +20,13 @@ button:hover {
 
 .about {
   background-color: black;
-  padding-bottom: 120px;
+  padding-bottom: 15px;
   color: white;
   padding-top: 60px;
+}
+.about h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .container {
   display: flex;
@@ -130,6 +134,234 @@ marquee {
   }
 }
 
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background: #000; /* Fallback */
+}
 
+.video-background iframe {
+  width: 100vw;
+  height: 56.25vw; /* 16:9 aspect ratio */
+  min-height: 100vh;
+  min-width: 177.77vh; /* 16:9 aspect ratio */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
 
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+
+  .box {
+    height: auto;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px 10px;
+  }
+
+  .box h3 {
+    font-size: 24px;
+  }
+
+  .box i {
+    font-size: 36px;
+    margin: 15px 0;
+  }
+
+  .images img {
+    height: 200px;
+    width: 90%;
+    margin: 5px;
+  }
+
+  footer {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .marquee-container {
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  .marquee-content img {
+    height: 200px;
+    min-width: 200px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px auto;
+    text-decoration: none;
+    display: block;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  .content-wrapper {
+    padding: 10px;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .box {
+    width: 95%;
+    padding: 15px 5px;
+  }
+
+  .images img {
+    height: 150px;
+  }
+
+  .marquee-content img {
+    height: 150px;
+    min-width: 150px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* Fix for marquee on mobile */
+@media screen and (max-width: 768px) {
+  .marquee-content {
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+}
+.faculty{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 10px;
+
+}
+.faculty img {
+  height: 35vh;
+  width: 39vh;
+  border-radius: 20px;
+  border: 3px solid #000000;
+  margin-top: 5%;
+}
+
+.faculty-section {
+  padding: 2rem 0;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.faculty-card {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+.faculty-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.gallery-section {
+  padding: 2rem 0;
+}
+
+.gallery-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .faculty-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .faculty-card img {
+    height: 200px;
+  }
+}
+.faculty-section h2 {
+  color: rgb(10, 176, 137);
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.gallery-section h3{
+  color: rgb(10, 176, 137);
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 40px;
+}
