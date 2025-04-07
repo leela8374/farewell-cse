@@ -15,6 +15,7 @@ import faculty4 from '../images/faculty4.jpg'
 import faculty5 from '../images/faculty5.jpg'
 import faculty6 from '../images/faculty6.jpg'
 import faculty7 from '../images/faculty7.jpg'
+import management from '../images/management.jpg'
 
 function About() {
   const galleryImages = [image8, image2, image4, image9, image10, image11]
@@ -40,6 +41,14 @@ function About() {
           <p>Seminar Hall</p>
         </div>
       </section>
+      <div className="faculty-section">
+        <h2>Chief Guests</h2>
+        <div className="faculty-grid">
+          <div className="faculty-card">
+            <img src={management} alt="Management" />
+          </div>
+        </div>
+      </div>
 
       <div className="faculty-section">
         <h2>Faculty</h2>
