@@ -18,6 +18,8 @@ function Home() {
       </div>
       <div className="content-overlay">
         <div className="content-wrapper">
+          <h2 style={{color:'aqua', fontFamily:'cursive'}}>Farewell Invitation</h2>
+          <br />
           <img style={{borderRadius:'50%', height:'80px', width:'80px'}} className="college-logo" src={image2} alt="Adarsh College" />
           <h1>ADARSH COLLEGE OF ENGINEERING</h1>
           <h2 style={{color:'white'}}>COMPUTER SCIENCE AND ENGINEERING</h2>
