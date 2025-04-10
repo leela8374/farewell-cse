@@ -15,6 +15,7 @@ import faculty4 from '../images/faculty4.jpg'
 import faculty5 from '../images/faculty5.jpg'
 import faculty6 from '../images/faculty6.jpg'
 import faculty7 from '../images/faculty7.jpg'
+import faculty8 from '../images/faculty8.jpg'
 import management from '../images/management.jpg'
 
 function About() {
@@ -88,6 +89,10 @@ function About() {
           <div className="faculty-card">
             <img src={faculty5} alt="Faculty 2" />
             <h4>Dhanalakshmi</h4>
+          </div>
+          <div className="faculty-card">
+            <img src={faculty8} alt="Faculty 2" />
+            <h4>Prasad</h4>
           </div>
         </div>
       </div>
